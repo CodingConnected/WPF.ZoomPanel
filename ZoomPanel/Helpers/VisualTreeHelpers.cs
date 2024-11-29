@@ -13,9 +13,9 @@ namespace CodingConnected.ZoomPanel.Helpers
         public static T FindChildControl<T>(this DependencyObject control) where T : DependencyObject
         {
             int childNumber = VisualTreeHelper.GetChildrenCount(control);
-            for (int i = 0; i < childNumber; i++)
+            if (childNumber > 0)
             {
-                DependencyObject child = VisualTreeHelper.GetChild(control, i);
+                DependencyObject child = VisualTreeHelper.GetChild(control, 0);
                 return child is T t
                     ? t
                     : child.FindChildControl<T>();
@@ -29,7 +29,7 @@ namespace CodingConnected.ZoomPanel.Helpers
         public static T FindParentControl<T>(this DependencyObject control) where T : DependencyObject
         {
             DependencyObject parent = VisualTreeHelper.GetParent(control);
-            while (parent != null && !(parent is T))
+            while (parent != null && parent is not T)
             {
                 parent = VisualTreeHelper.GetParent(parent);
             }
