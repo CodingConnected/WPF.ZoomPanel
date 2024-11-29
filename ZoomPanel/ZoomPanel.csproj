@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Baisc Project Information">
+	  <RootNamespace>CodingConnected.ZoomPanel</RootNamespace>
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+    
+  <PropertyGroup Label="Assembly Metadata">
+    <Product>WPF ZoomPanel</Product>
+    <Authors>Clifford Nelson, Moravuscz</Authors>
+    <Company>Moravuscz</Company>
+    <Copyright>Clifford Nelson, Moravuscz</Copyright>
+    <Description>An Enhanced WPF Custom Control for Zooming and Panning by Clifford Nelson, modified by Moravuscz</Description>
+    <ApplicationIcon>Resources\ZoomPanel.ico</ApplicationIcon>
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+  </ItemGroup>
+
+  <ItemGroup Label="Partial Class Grouping">
+    <Compile Update="ZoomPanel.EventHandlers.cs">
+      <DependentUpon>ZoomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ZoomPanel.IScrollInfo.cs">
+      <DependentUpon>ZoomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ZoomPanel.Methods.cs">
+      <DependentUpon>ZoomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ZoomPanel.UndoRedo.cs">
+      <DependentUpon>ZoomPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+</Project>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <ProjectGuid>{120DA64E-D1B0-4D35-96CA-E3986504A1B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZoomAndPanSample</RootNamespace>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags />
+    <UpgradeBackupLocation />
+    <AssemblyTitle>ZoomAndPanControl</AssemblyTitle>
+    <Product>ZoomAndPanControl</Product>
+    <Copyright>Copyright ©  2010</Copyright>
+    <Version>0.0.8452.17950</Version>
+    <FileVersion>1.0.8452.17950</FileVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZoomPanel\ZoomPanel.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Colors.jpg" />
+  </ItemGroup>
+</Project>
