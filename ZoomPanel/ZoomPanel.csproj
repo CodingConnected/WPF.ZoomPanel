@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup Label="Baisc Project Information">
+  <PropertyGroup Label="Basic Project Information">
 	  <RootNamespace>CodingConnected.ZoomPanel</RootNamespace>
     <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
@@ -8,10 +8,10 @@
     
   <PropertyGroup Label="Assembly Metadata">
     <Product>WPF ZoomPanel</Product>
-    <Authors>Clifford Nelson, Moravuscz</Authors>
-    <Company>Moravuscz</Company>
-    <Copyright>Clifford Nelson, Moravuscz</Copyright>
-    <Description>An Enhanced WPF Custom Control for Zooming and Panning by Clifford Nelson, modified by Moravuscz</Description>
+    <Authors>Clifford Nelson, Moravuscz, CodingConnected / Menno van der Woude</Authors>
+    <Company>CodingConnected e.U.</Company>
+    <Copyright>Clifford Nelson, Moravuscz, CodingConnected / Menno van der Woude</Copyright>
+    <Description>An Enhanced WPF Custom Control for Zooming and Panning by Clifford Nelson, modified by Moravuscz, then by Menno van der Woude</Description>
     <ApplicationIcon>Resources\ZoomPanel.ico</ApplicationIcon>
   </PropertyGroup>
     
